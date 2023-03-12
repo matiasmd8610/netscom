@@ -5,8 +5,8 @@ html {
 
 body {
     font-family: $font-family-main;
-    font-size: 1.6rem;
-    line-height: 1.5;
+    font-size: 1.8rem;
+    line-height: 1.4;
     color: $color-main;
 }
 
@@ -142,10 +142,10 @@ h2 {
     height: 4px;
     transition: width 0.5s linear;
     z-index: 1000;
-    background-color: $color-blue-main;
+    background-color: #fff;
     width: 100%;
     span {
-        background-color: #4CAF50;
+        background-color: $color-blue-light;
         display: block;
         width: 0;
         height: 100%;

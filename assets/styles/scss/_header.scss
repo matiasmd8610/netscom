@@ -17,13 +17,14 @@ header {
 
         .navbar-brand {
             img {
-                width: 100px;
+                width: 200px;
             }
         }
     }
 
-    .navbar{
-        background-color: $color-blue-main;
+    .navbar {
+        background-color: #fff;
+        padding: 1rem 0;
 
         &-toggler {
             border: 0;
@@ -36,7 +37,6 @@ header {
                 flex-direction: column;
                 background-image: none;
                 transition: all .25s ease-in-out;
-                
                 
                     span{
                         display: block;
@@ -73,34 +73,36 @@ header {
                 &:not(:last-child) {
                     margin-right: 1.8rem;
                 }
-                .nav-link{
-                    font-size: 1.7rem;
-                    color:#ffffff;
-                    letter-spacing: -0.02em;
-                    font-weight: 300;
+
+                .nav-link {
+                    font-size: 1.5rem;
+                    color: #242c59;
+                    letter-spacing: 0.02em;
+                    font-weight: 600;
                     position: relative;
+                    text-transform: uppercase;
+                    font-family: $font-family-secondary;
                     &:hover {
                         &:after {
-                            width: 85%;
+                            width: 90%;
                         }
                     }
                     &:after {
                         @include media-breakpoint-up(lg) {
                             content: '';
                             display: block;
-                            left: 50%;
-                            transform: translateX(-50%);
+                            left: 5%;
                             width: 0;
                             position: absolute;
                             transition: all 0.3s ease;
-                            background-color: #fff;
-                            height: 1px;
-                            bottom: 4px;
+                            background-color: $color-blue-main;
+                            height: 2px;
+                            bottom: 0;
                         }
                     }
                 }
 
-                &.contact-us {
+                /* &.contact-us {
                     background-color: $color-whatsapp;
                     padding: .2rem 1.4rem;
                     display: flex;
@@ -124,7 +126,7 @@ header {
                     i {
                         margin-right: .5rem;
                     }
-                }
+                } */
             }
         }
       
@@ -132,9 +134,9 @@ header {
 
     .navbar-brand {
         img {
-            width: 126px;
+            width: 230px;
             height: auto;
-            transition: all 0.3s ease;
+            transition: width 0.3s ease;
         }
     }
 
