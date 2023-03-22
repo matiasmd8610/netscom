@@ -91,11 +91,12 @@ header {
                         @include media-breakpoint-up(lg) {
                             content: '';
                             display: block;
-                            left: 5%;
+                            left: 50%;
                             width: 0;
                             position: absolute;
                             transition: all 0.3s ease;
-                            background-color: $color-blue-main;
+                            transform: translateX(-50%);
+                            background-color: $color-blue-light;
                             height: 2px;
                             bottom: 0;
                         }

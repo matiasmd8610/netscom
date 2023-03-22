@@ -122,6 +122,7 @@ h2 {
 h1 {
     font-size: 3.8rem;
     color: #fff;
+    text-align: center;
     @include media-breakpoint-up(md) {
         font-size: 5.6rem;
     }
@@ -129,6 +130,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
+    text-align: center;
     @include media-breakpoint-up(md) {
         font-size: 3rem;
     }
@@ -152,6 +154,45 @@ h2 {
     }
 }
 
-.lg-sub-html p {
+/* .lg-sub-html p {
     font-size: 1.5rem;
 }
+ */
+/*ANIMATIONS
+********************************************/
+@keyframes bounce-in-top {
+    0% {
+        transform: translateY(-500px);
+        animation-timing-function: ease-in;
+        opacity: 0;
+    }
+    38% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+        opacity: 1;
+    }
+    55% {
+        transform: translateY(-65px);
+        animation-timing-function: ease-in;
+    }
+    72% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    81% {
+        transform: translateY(-28px);
+        animation-timing-function: ease-in;
+    }
+    90% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+    95% {
+        transform: translateY(-8px);
+        animation-timing-function: ease-in;
+    }
+    100% {
+        transform: translateY(0);
+        animation-timing-function: ease-out;
+    }
+  }
