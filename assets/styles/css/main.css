@@ -12532,13 +12532,43 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 2.2rem;
-  text-align: center;
+  font-size: 2.25rem;
 }
 @media (min-width: 768px) {
   h2, .h2 {
-    font-size: 3rem;
+    font-size: 2.85rem;
   }
+}
+h2:after, .h2:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: rgb(0, 136, 255);
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  transform: translateY(10px);
+}
+
+h3, .h3 {
+  font-size: 2rem;
+}
+@media (min-width: 768px) {
+  h3, .h3 {
+    font-size: 2.3rem;
+  }
+}
+h3:after, .h3:after {
+  content: "";
+  display: block;
+  height: 3px;
+  background-color: rgb(0, 136, 255);
+  width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+  transform: translateY(10px);
 }
 
 #progress-bar {
@@ -12603,6 +12633,48 @@ h2, .h2 {
 }
 footer {
   position: relative;
+  /*CONTACT FORM
+  ****************************************/
+}
+footer .formulario {
+  background-color: #E6E6E6;
+}
+footer .formulario .tituloFormulario {
+  text-align: center;
+  margin: 3rem 0 4rem;
+}
+footer .formulario .tituloFormulario p {
+  font-size: 1.6rem;
+}
+@media (min-width: 768px) {
+  footer .formulario .tituloFormulario p {
+    font-size: 2.1rem;
+  }
+}
+footer .formulario .error-msg {
+  color: #f00000;
+  font-size: 14px;
+  padding-top: 5px;
+  display: none;
+}
+footer .formulario .error-msg.visible {
+  display: block;
+}
+footer .formulario .form-group {
+  margin-bottom: 2.5rem;
+}
+footer .formulario .form-group .form-control {
+  border-radius: 0;
+  padding: 0.85rem 1rem;
+  font-size: 1.6rem;
+}
+footer .formulario .form-group textarea {
+  height: 178px;
+}
+@media (min-width: 992px) {
+  footer .formulario .form-group textarea {
+    margin-left: 1rem;
+  }
 }
 footer .masInfo {
   display: flex;
@@ -12667,19 +12739,13 @@ footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp:hover {
     font-size: 1.9rem;
   }
 }
-footer .maps {
-  height: 450px;
-}
-footer .maps iframe {
-  width: 100%;
-  height: 100%;
-}
 footer .logo-footer {
   margin-top: 4rem;
 }
 footer .social-links {
   list-style: none;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
@@ -12709,13 +12775,14 @@ footer .social-links li a:hover {
 footer .social-links li a i {
   font-size: 2.4rem;
 }
-footer .matriculado {
-  text-align: center;
-}
 footer .copyright {
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  background-color: #000;
+  color: #fff;
+  height: 50px;
 }
 footer .footer-widget {
   position: fixed;
@@ -13033,47 +13100,127 @@ header .navbar-brand img {
   opacity: 1;
 }
 
-/*CONTACT FORM
-****************************************/
-.formulario {
-  background-color: #E6E6E6;
+#nosotros .container .quienessomos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  color: rgb(0, 0, 0);
 }
-.formulario .tituloFormulario {
-  text-align: center;
-  margin: 3rem 0 4rem;
-}
-.formulario .tituloFormulario p {
-  font-size: 1.6rem;
+#nosotros .container .quienessomos .quienessomos__titulo {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0rem 0.3rem;
 }
 @media (min-width: 768px) {
-  .formulario .tituloFormulario p {
+  #nosotros .container .quienessomos .quienessomos__titulo {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 992px) {
+  #nosotros .container .quienessomos .quienessomos__titulo {
+    font-size: 3.1rem;
+  }
+}
+#nosotros .container .quienessomos .quienessomos__text {
+  margin-bottom: 2rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  #nosotros .container .quienessomos .quienessomos__text {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 992px) {
+  #nosotros .container .quienessomos .quienessomos__text {
     font-size: 2.1rem;
   }
 }
-.formulario .error-msg {
-  color: #f00000;
-  font-size: 14px;
-  padding-top: 5px;
-  display: none;
+
+#servicios {
+  background-color: rgb(247, 247, 247);
 }
-.formulario .error-msg.visible {
-  display: block;
+#servicios .container .soluciones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem 0;
+  color: rgb(0, 0, 0);
 }
-.formulario .form-group {
-  margin-bottom: 2.5rem;
+#servicios .container .soluciones .soluciones__titulo {
+  font-size: 2.1rem;
+  font-weight: bold;
+  margin: 0rem 0.3rem;
 }
-.formulario .form-group .form-control {
-  border-radius: 0;
-  padding: 0.85rem 1rem;
-  font-size: 1.6rem;
-}
-.formulario .form-group textarea {
-  height: 178px;
+@media (min-width: 768px) {
+  #servicios .container .soluciones .soluciones__titulo {
+    font-size: 2.5rem;
+  }
 }
 @media (min-width: 992px) {
-  .formulario .form-group textarea {
-    margin-left: 1rem;
+  #servicios .container .soluciones .soluciones__titulo {
+    font-size: 3.1rem;
   }
+}
+#servicios .container .soluciones__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 40px;
+}
+@media (min-width: 768px) {
+  #servicios .container .soluciones__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 992px) {
+  #servicios .container .soluciones__grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+#servicios .container .soluciones__grid .soluciones__grid--servicio {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+#servicios .container .soluciones__grid .soluciones__grid--servicio img {
+  width: 20%;
+}
+
+#servicios2 .container .servicios2__box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+#servicios2 .container .servicios2__box .servicios2__box--item {
+  width: 45%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+}
+#servicios2 .container .servicios2__box .servicios2__box--item img {
+  width: 100%;
+  height: fit-content;
+}
+
+/*SECTION UBICACION
+*********************************************/
+.ubicacion .maps {
+  height: 450px;
+}
+.ubicacion .maps iframe {
+  width: 100%;
+  height: 100%;
 }
 
 /*THANK YOU

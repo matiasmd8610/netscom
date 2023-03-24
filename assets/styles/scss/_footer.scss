@@ -1,6 +1,54 @@
 footer {
     position: relative;
 
+    /*CONTACT FORM
+****************************************/
+    .formulario {
+        background-color: #E6E6E6;
+
+        .tituloFormulario{
+            text-align: center;
+            margin: 3rem 0 4rem;
+            
+            p{
+                font-size: 1.6rem;
+                @include media-breakpoint-up(md) {
+                    font-size: 2.1rem;  
+                }
+            }
+        }
+
+        .error-msg {
+            color: #f00000;
+            font-size: 14px;
+            padding-top: 5px;
+            display: none;
+            &.visible {
+                display: block;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 2.5rem;
+
+            .form-control{
+                border-radius: 0;
+                padding: 0.85rem 1rem;
+                font-size: 1.6rem;
+            }
+
+            textarea {
+                height: 178px;
+                @include media-breakpoint-up(lg) {
+                    margin-left: 1rem;
+                }
+            }
+        
+        }
+
+    }
+
+
     .masInfo {
         display: flex;
         flex-direction: column;
@@ -69,16 +117,7 @@ footer {
         }
     }
 
-    .maps {
-        height: 450px;
-
-        iframe {
-            width: 100%;
-            height: 100%;
-
-        }
-    }
-
+   
     .logo-footer {
         margin-top: 4rem;
     }
@@ -86,6 +125,7 @@ footer {
     .social-links {
         list-style: none;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         margin: 3rem 0;
@@ -121,14 +161,17 @@ footer {
     }
 
 
-    .matriculado {
-        text-align: center;
-    }
-
+    
     .copyright {
-        text-align: center;
-        font-size: 1.5rem;
-        padding: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        // padding: 0rem 0;
+        background-color: #000;
+        color:#fff;
+        height: 50px;
+
     }
 
     .footer-widget {

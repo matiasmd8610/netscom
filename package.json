@@ -1,7 +1,7 @@
 {
-  "name": "kerlin_bienes_raices",
+  "name": "Netscom",
   "version": "1.0.0",
-  "description": "Kerlin Bienes Raices",
+  "description": "Netscom",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,14 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/matiasmd8610/kerlin_bienes_raices.git"
+    "url": "git+https://github.com/matiasmd8610/netscom.git"
   },
   "author": "Matias",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/matiasmd8610/kerlin_bienes_raices/issues"
+    "url": "https://github.com/matiasmd8610/netscom/issues"
   },
-  "homepage": "https://github.com/matiasmd8610/kerlin_bienes_raices#readme",
+  "homepage": "https://github.com/matiasmd8610/netscom#readme",
   "devDependencies": {
     "sass": "^1.57.1"
   },
