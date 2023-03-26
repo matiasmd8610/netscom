@@ -1,22 +1,20 @@
-footer {
+
+    
+
+.form{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
     position: relative;
+
+}
 
     /*CONTACT FORM
 ****************************************/
     .formulario {
-        background-color: #E6E6E6;
-
-        .tituloFormulario{
-            text-align: center;
-            margin: 3rem 0 4rem;
-            
-            p{
-                font-size: 1.6rem;
-                @include media-breakpoint-up(md) {
-                    font-size: 2.1rem;  
-                }
-            }
-        }
+        background-color:rgba(17, 145, 214, 0.31);
+        padding: 2.3rem 2.3rem;
+        
 
         .error-msg {
             color: #f00000;
@@ -33,15 +31,13 @@ footer {
 
             .form-control{
                 border-radius: 0;
-                padding: 0.85rem 1rem;
+                padding: 1rem 1rem;
                 font-size: 1.6rem;
             }
 
             textarea {
                 height: 178px;
-                @include media-breakpoint-up(lg) {
-                    margin-left: 1rem;
-                }
+               
             }
         
         }
@@ -49,89 +45,38 @@ footer {
     }
 
 
-    .masInfo {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-blue-main;
-        padding: 5rem 0;
-
-        .masInfo__datos {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            color: white;
-
-            .masInfo__datos--titulo {
-                font-size: 2.1rem;
-                font-weight: bold;
-                margin: 0rem 0.3rem;
-                @include media-breakpoint-up(md) {
-                    font-size: 2.5rem;
-
-                }
-                @include media-breakpoint-up(lg) {
-                    font-size: 3.1rem;
-
-                }
-            }
-
-            .masInfo__datos--text {
-                margin-bottom: 2rem;
-                margin-right: 0.3rem;
-                margin-left: 0.3rem;
-
-                @include media-breakpoint-up(md) {
-                    font-size: 1.9rem;
-
-                }
-
-                @include media-breakpoint-up(lg) {
-                    font-size: 2.1rem;
-
-                }
-
-            }
-
-            .masInfo__datos--Whatsapp {
-                font-size: 1.6rem;
-                background-color: $color-whatsapp;
-                border-radius: 22px;
-                border-style: none;
-                color: white;
-                padding: 0.6rem 2rem;
-                margin: 0rem 0.3rem;
-                transition: all 0.3s ease;
-                &:hover {
-                    background-color: #009688;
-                }
-
-                @include media-breakpoint-up(md) {
-                    font-size: 1.9rem;
-
-                }
-
-            }
-        }
-    }
-
-   
     .logo-footer {
         margin-top: 4rem;
     }
 
+
+.redes{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+
     .social-links {
         list-style: none;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
         justify-content: center;
         margin: 3rem 0;
 
         li {
-            margin-right: .6rem;
+            margin-right: 1.6rem;
+            @include media-breakpoint-up(sm) {
+                margin-right: 3.6rem;
+            }
+            @include media-breakpoint-up(md) {
+                margin-right: 4.6rem;
+            }
+            @include media-breakpoint-up(lg) {
+                margin-right: 6.6rem;
+            }
 
             &:last-child {
                 margin: 0;
@@ -160,7 +105,7 @@ footer {
         }
     }
 
-
+}
     
     .copyright {
         display: flex;
@@ -241,4 +186,3 @@ footer {
             transition: all 0.3s ease;
         }
     }
-}

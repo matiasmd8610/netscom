@@ -12632,132 +12632,80 @@ h3:after, .h3:after {
     animation-timing-function: ease-out;
   }
 }
-footer {
+.form {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
   position: relative;
-  /*CONTACT FORM
-  ****************************************/
 }
-footer .formulario {
-  background-color: #E6E6E6;
+
+/*CONTACT FORM
+****************************************/
+.formulario {
+  background-color: rgba(17, 145, 214, 0.31);
+  padding: 2.3rem 2.3rem;
 }
-footer .formulario .tituloFormulario {
-  text-align: center;
-  margin: 3rem 0 4rem;
-}
-footer .formulario .tituloFormulario p {
-  font-size: 1.6rem;
-}
-@media (min-width: 768px) {
-  footer .formulario .tituloFormulario p {
-    font-size: 2.1rem;
-  }
-}
-footer .formulario .error-msg {
+.formulario .error-msg {
   color: #f00000;
   font-size: 14px;
   padding-top: 5px;
   display: none;
 }
-footer .formulario .error-msg.visible {
+.formulario .error-msg.visible {
   display: block;
 }
-footer .formulario .form-group {
+.formulario .form-group {
   margin-bottom: 2.5rem;
 }
-footer .formulario .form-group .form-control {
+.formulario .form-group .form-control {
   border-radius: 0;
-  padding: 0.85rem 1rem;
+  padding: 1rem 1rem;
   font-size: 1.6rem;
 }
-footer .formulario .form-group textarea {
+.formulario .form-group textarea {
   height: 178px;
 }
-@media (min-width: 992px) {
-  footer .formulario .form-group textarea {
-    margin-left: 1rem;
-  }
-}
-footer .masInfo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #242c59;
-  padding: 5rem 0;
-}
-footer .masInfo .masInfo__datos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: white;
-}
-footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-  font-size: 2.1rem;
-  font-weight: bold;
-  margin: 0rem 0.3rem;
-}
-@media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-    font-size: 2.5rem;
-  }
-}
-@media (min-width: 992px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--titulo {
-    font-size: 3.1rem;
-  }
-}
-footer .masInfo .masInfo__datos .masInfo__datos--text {
-  margin-bottom: 2rem;
-  margin-right: 0.3rem;
-  margin-left: 0.3rem;
-}
-@media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--text {
-    font-size: 1.9rem;
-  }
-}
-@media (min-width: 992px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--text {
-    font-size: 2.1rem;
-  }
-}
-footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-  font-size: 1.6rem;
-  background-color: #1fca1f;
-  border-radius: 22px;
-  border-style: none;
-  color: white;
-  padding: 0.6rem 2rem;
-  margin: 0rem 0.3rem;
-  transition: all 0.3s ease;
-}
-footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp:hover {
-  background-color: #009688;
-}
-@media (min-width: 768px) {
-  footer .masInfo .masInfo__datos .masInfo__datos--Whatsapp {
-    font-size: 1.9rem;
-  }
-}
-footer .logo-footer {
+
+.logo-footer {
   margin-top: 4rem;
 }
-footer .social-links {
+
+.redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.redes .social-links {
   list-style: none;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin: 3rem 0;
 }
-footer .social-links li {
-  margin-right: 0.6rem;
+.redes .social-links li {
+  margin-right: 1.6rem;
 }
-footer .social-links li:last-child {
+@media (min-width: 576px) {
+  .redes .social-links li {
+    margin-right: 3.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .redes .social-links li {
+    margin-right: 4.6rem;
+  }
+}
+@media (min-width: 992px) {
+  .redes .social-links li {
+    margin-right: 6.6rem;
+  }
+}
+.redes .social-links li:last-child {
   margin: 0;
 }
-footer .social-links li a {
+.redes .social-links li a {
   width: 4rem;
   height: 4rem;
   line-height: 40px;
@@ -12769,14 +12717,15 @@ footer .social-links li a {
   border-radius: 50%;
   text-decoration: none;
 }
-footer .social-links li a:hover {
+.redes .social-links li a:hover {
   background-color: #3694d0;
   transform: translateY(-0.5rem);
 }
-footer .social-links li a i {
+.redes .social-links li a i {
   font-size: 2.4rem;
 }
-footer .copyright {
+
+.copyright {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12785,7 +12734,8 @@ footer .copyright {
   color: #fff;
   height: 50px;
 }
-footer .footer-widget {
+
+.footer-widget {
   position: fixed;
   left: 2rem;
   bottom: 2rem;
@@ -12795,7 +12745,7 @@ footer .footer-widget {
   animation: bounce-in-top 1.1s both;
   animation-delay: 1s;
 }
-footer .footer-widget a {
+.footer-widget a {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   color: #fff;
   position: absolute;
@@ -12807,11 +12757,11 @@ footer .footer-widget a {
   z-index: 9999;
   padding: 10px;
 }
-footer .footer-widget a:hover {
+.footer-widget a:hover {
   background-color: #009688;
   color: #fff;
 }
-footer .footer-widget a img {
+.footer-widget a img {
   height: 40px;
   margin: 0;
   display: block;
@@ -12819,7 +12769,8 @@ footer .footer-widget a img {
   padding: 0;
   width: 40px;
 }
-footer .back-to-top {
+
+.back-to-top {
   color: #fff;
   position: fixed;
   right: 1.5rem;
@@ -12836,15 +12787,15 @@ footer .back-to-top {
   z-index: 5;
 }
 @media (min-width: 992px) {
-  footer .back-to-top:hover {
+  .back-to-top:hover {
     background-color: #3694d0;
     border-color: #3694d0;
   }
-  footer .back-to-top:hover i {
+  .back-to-top:hover i {
     color: #fff;
   }
 }
-footer .back-to-top i {
+.back-to-top i {
   font-size: 2.2rem;
   color: #242c59;
   transition: all 0.3s ease;
@@ -12888,7 +12839,7 @@ header .navbar-toggler-icon span {
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #fff;
+  background-color: #156d99;
   transition: all 0.25s ease-in-out;
 }
 header .navbar-toggler-icon span:not(:last-child) {
