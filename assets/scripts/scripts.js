@@ -103,3 +103,11 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+
+for (let i = 1; i <= 242; i++) {
+  let img = document.createElement("img");
+  img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+  document.getElementById("imagenes").appendChild(img);
+}

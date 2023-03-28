@@ -13187,6 +13187,21 @@ header .navbar-brand img {
   width: 100%;
 }
 
+/*************SECTION CLIENTES IMAGENES MINIATURA******************/
+#imagenes {
+  margin: auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+}
+#imagenes img {
+  width: 8%;
+}
+#imagenes img:hover {
+  scale: 1.1;
+}
+
 /*SECTION UBICACION
 *********************************************/
 #ubicacion {

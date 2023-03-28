@@ -320,6 +320,26 @@
 
 }
 
+/*************SECTION CLIENTES IMAGENES MINIATURA******************/
+
+#imagenes{
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+   
+    img {
+            width: 8%;
+
+            &:hover{
+                scale: 1.1;
+            }
+        }
+
+}
+
+
   /*SECTION UBICACION
   *********************************************/
 #ubicacion {
