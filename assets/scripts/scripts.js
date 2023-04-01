@@ -111,3 +111,6 @@ for (let i = 1; i <= 242; i++) {
   img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
   document.getElementById("imagenes").appendChild(img);
 }
+
+
+

@@ -52,6 +52,9 @@
                 @include media-breakpoint-up(xl) {
                     font-size: 5rem;
                 }
+                &:after {
+                    display: none;
+                }
                             
             }
 
@@ -60,6 +63,15 @@
                 font-size: 2.2rem;
                 @include media-breakpoint-up(xl) {
                     font-size: 3.2rem;
+                }
+                &:after {
+                    display: none;
+                }
+            }
+            
+            h4 {
+                &:after {
+                    display: none;
                 }
             }
         }
@@ -76,7 +88,7 @@
             background-image: url('../../images/slide_03.jpg');
         }
     }
-
+   
     &-button-prev,
     &-button-next {
         color: #fff;
@@ -198,6 +210,8 @@
         }
     }
 }
+
+
 
 #servicios{
     background-color: rgba(247, 247, 247, 1);
@@ -413,5 +427,7 @@
 
 
 }
+
+ 
 
 
