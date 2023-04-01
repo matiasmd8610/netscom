@@ -13003,6 +13003,9 @@ header .navbar-brand img {
 .swiper .swiper-slide--content h3:after, .swiper .swiper-slide--content .h3:after {
   display: none;
 }
+.swiper .swiper-slide--content h4:after, .swiper .swiper-slide--content .h4:after {
+  display: none;
+}
 .swiper .swiper-slide.slide-01 {
   background-image: url("../../images/slide_02.jpg");
 }
@@ -13194,17 +13197,17 @@ header .navbar-brand img {
 }
 
 /*************SECTION CLIENTES IMAGENES MINIATURA******************/
-#imagenes {
+#imagenes, #imagenes2, #imagenes3 {
   margin: auto;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   width: 80%;
 }
-#imagenes img {
+#imagenes img, #imagenes2 img, #imagenes3 img {
   width: 8%;
 }
-#imagenes img:hover {
+#imagenes img:hover, #imagenes2 img:hover, #imagenes3 img:hover {
   scale: 1.1;
 }
 
