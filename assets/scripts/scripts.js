@@ -5,10 +5,10 @@ window.addEventListener('scroll', function () {
   header.classList.toggle("sticky", window.scrollY > 0);
 });
 
-/*Swiper initialize
+/*Swiper main initialize
 **************************************/
-if (document.querySelector('.swiper')) {
-  const swiper = new Swiper('.swiper', {
+if (document.querySelector('.swiper-main')) {
+  const swiper = new Swiper('.swiper-main', {
       direction: "horizontal",
       loop: true,
       autoplay: {
@@ -105,24 +105,50 @@ AOS.init({
 });
 
 
-
-
+/*CLIENTS IMAGES
+****************************************************/
 for (let i = 1; i <= 242; i++) {
   let img = document.createElement("img");
+  img.setAttribute("alt", "Logo cliente");
 
-  if (i< 80){
+  if (i < 60){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
-  document.getElementById("imagenes").appendChild(img);
+    document.getElementById("imagenes").appendChild(img);
   }
-  else if (i >= 80 && i<160){
+  else if (i >= 60 && i < 120){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
     document.getElementById("imagenes2").appendChild(img);
   }
-  else {
+  else if (i >= 120 && i < 180){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
     document.getElementById("imagenes3").appendChild(img);
   }
+  else {
+    img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+    document.getElementById("imagenes4").appendChild(img);
+  }
   
+}
+
+
+/*Swiper Clients logos initialize
+**************************************/
+if (document.querySelector('.swiper-clientsLogos')) {
+  const swiper = new Swiper('.swiper-clientsLogos', {
+      direction: "horizontal",
+      loop: true,
+      autoplay: false,
+      effect: "fade",
+      speed: 1000,
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+  });
 }
 
 

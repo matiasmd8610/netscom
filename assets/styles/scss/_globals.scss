@@ -11,69 +11,40 @@ body {
 }
 
 .btn {
-    min-width: 240px;
+    min-width: 160px;
     color: #fff;
-    border: none;
     text-decoration: none;
     transition: all 0.3s ease;
-    margin: 1rem 0 0;
+    margin: 2rem 0 0;
     font-size: 1.6rem;
     text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 1rem 1.6rem;
-    position: relative;
+    padding: .8rem 2rem;
     font-weight: 600;
-    border-radius: 0px;
     width: 100%;
+    border-radius: 2rem;
+    letter-spacing: 0.1em;
+    border: 2px solid $color-blue-light;
 
     @include media-breakpoint-up(md) {
         width: auto;
     }
 
-    span {
-        position: relative;
-        z-index: 10;
-    }
-    &:after {
-        content: '';
-        display: inline-block;
-        width: 0;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        transition: all 0.3s ease;
-        background-color: $color-blue-dark;
-        z-index: 9;
-    }
-    
     &.btn-primary {
-        background: $color-blue-main;
+        background: $color-blue-light;
         &:hover {
-            &:after {
-                width: 100%;
-            }
+            background-color: #fff;
+            color: $color-blue-light;
+            border: 2px solid $color-blue-light;
         }
     }
 
-    &.btn-whatsapp {
-        background-color: $color-whatsapp;
-        border-radius: 2.5rem;
-        overflow: hidden;
-        color: #fff !important;
-        &:after {
-            background-color: #009688;
-        }
+    &.btn-secondary {
+        background: #fff;
+        border: 2px solid $color-blue-light;
+        color: $color-blue-light;
         &:hover {
-            &:after {
-                width: 100%;
-            }
-        }
-        i {
-            margin-right: .7rem;
-            font-size: 2rem;
-            transform: translateY(2px);
+            background-color: $color-blue-light;
+            color: #fff;
         }
     }
 }
@@ -103,27 +74,24 @@ strong {
 
 section {
     margin-bottom: 3.5rem;
-    padding: 1rem 0;
+    padding: 4rem 0;
 }
-
-sup {
-    top: -0.3em;
-}
-
 
 h1,
-h2 {
+h2,
+h3 {
     line-height: 1.15;
-    letter-spacing: -.01em;
+    letter-spacing: .05em;
     font-weight: 700;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
+    font-family: $font-family-secondary;
+    color: $color-main;
 }
 
 h1 {
     font-size: 3.8rem;
     color: #fff;
     text-align: center;
+    text-transform: uppercase;
     @include media-breakpoint-up(md) {
         font-size: 5.6rem;
     }
@@ -131,10 +99,11 @@ h1 {
 
 
 h2 {
-    font-size: 2.25rem;
-
+    font-size: 2.5rem;
+    margin-bottom: 4.5rem;
+    text-transform: uppercase;
     @include media-breakpoint-up(md) {
-        font-size: 2.85rem;
+        font-size: 3.8rem;
     }
 
     &:after {
@@ -142,19 +111,22 @@ h2 {
         display: block;
         height: 3px;
         background-color: rgb(0, 136, 255);
-        width: 80px;
+        width: 90px;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 1.5rem;
         transform: translateY(10px);
     }
 
 }
+
 h3 {
-    font-size:2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    letter-spacing: 0;
 
     @include media-breakpoint-up(md) {
-        font-size: 2.3rem;
+        font-size: 2.6rem;
     }
 
     &:after {
@@ -189,10 +161,7 @@ h3 {
     }
 }
 
-/* .lg-sub-html p {
-    font-size: 1.5rem;
-}
- */
+
 /*ANIMATIONS
 ********************************************/
 @keyframes bounce-in-top {
@@ -230,4 +199,13 @@ h3 {
         transform: translateY(0);
         animation-timing-function: ease-out;
     }
+  }
+
+
+  /*MIXINS
+  *******************************************/
+  @mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
