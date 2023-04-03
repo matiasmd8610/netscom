@@ -1,0 +1,83 @@
+
+
+.nosotros__flex--foto{
+
+    img {
+        width: 100%;
+    }
+
+   
+      
+
+}
+    
+
+
+.nosotros__flex--quienessomos{
+
+
+padding-top: 3rem;
+padding-bottom: 1.6rem;
+color: rgb(0, 0, 0);
+}
+
+    .quienessomos--titulo{
+        text-align: center;
+        
+    }
+
+    .quienessomos--text{
+        text-align: justify;
+        margin-bottom: 2rem;
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.7rem;
+
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.2rem;
+        }
+    }
+
+    .quienessomos-list{
+        list-style-type:square;
+        text-align: justify;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.7rem;
+
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 2.2rem;
+        }
+    }
+
+.servicios2-logos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 2rem;
+img {
+    margin: 0 2rem;
+    width: 85%;
+
+    @include media-breakpoint-up(sm) {
+        width: 65%;
+    }
+
+    @include media-breakpoint-up(md) {
+        width: 40%;
+    }
+}
+}
+
+
+
+
+   
+
+

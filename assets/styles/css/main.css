@@ -12654,6 +12654,12 @@ footer .formulario .form-group textarea {
 footer .logo-footer {
   margin-top: 4rem;
 }
+footer .redes h3, footer .redes .h3 {
+  text-align: center;
+}
+footer .redes h3::after, footer .redes .h3::after {
+  display: none;
+}
 footer .redes .social-links {
   list-style: none;
   display: flex;
@@ -13213,6 +13219,14 @@ header .navbar-brand img {
 #ubicacion .detalles .lista li {
   padding: 10px 0;
 }
+#ubicacion .detalles .lista li i {
+  padding-right: 15px;
+  color: rgb(0, 136, 255);
+  font-size: 2.5rem;
+}
+#ubicacion .detalles .lista li i a {
+  text-decoration: none;
+}
 
 /*THANK YOU
 ************************************************/
@@ -13274,6 +13288,140 @@ header .navbar-brand img {
 .swiper-clientsLogos .swiper-button-prev:after {
   color: #fff;
   font-size: 2.5rem;
+}
+
+.nosotros__flex--foto img {
+  width: 100%;
+}
+
+.nosotros__flex--quienessomos {
+  padding-top: 3rem;
+  padding-bottom: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+
+.quienessomos--titulo {
+  text-align: center;
+}
+
+.quienessomos--text {
+  text-align: justify;
+  margin-bottom: 2rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .quienessomos--text {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .quienessomos--text {
+    font-size: 2.2rem;
+  }
+}
+
+.quienessomos-list {
+  list-style-type: square;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .quienessomos-list {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .quienessomos-list {
+    font-size: 2.2rem;
+  }
+}
+
+.servicios2-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.servicios2-logos img {
+  margin: 0 2rem;
+  width: 85%;
+}
+@media (min-width: 576px) {
+  .servicios2-logos img {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .servicios2-logos img {
+    width: 40%;
+  }
+}
+
+.nosotros__flex--foto img {
+  width: 100%;
+}
+
+.nosotros__flex--quienessomos {
+  padding-top: 3rem;
+  padding-bottom: 1.6rem;
+  color: rgb(0, 0, 0);
+}
+
+.quienessomos--titulo {
+  text-align: center;
+}
+
+.quienessomos--text {
+  text-align: justify;
+  margin-bottom: 2rem;
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
+}
+@media (min-width: 768px) {
+  .quienessomos--text {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .quienessomos--text {
+    font-size: 2.2rem;
+  }
+}
+
+.quienessomos-list {
+  list-style-type: square;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .quienessomos-list {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) {
+  .quienessomos-list {
+    font-size: 2.2rem;
+  }
+}
+
+.servicios2-logos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.servicios2-logos img {
+  margin: 0 2rem;
+  width: 85%;
+}
+@media (min-width: 576px) {
+  .servicios2-logos img {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  .servicios2-logos img {
+    width: 40%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
