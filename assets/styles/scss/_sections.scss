@@ -336,7 +336,6 @@
 /*SECTION UBICACION
 *********************************************/
 #ubicacion {
-
     .maps {
         iframe {
             width: 100%;
@@ -357,9 +356,7 @@
         align-items: center;
         text-align: center;
         @include media-breakpoint-up(lg) {
-            margin-top: 0;
-            padding-left: 2rem;
-            text-align: left;
+            padding-left: 1rem;
         }
 
         .lista {
