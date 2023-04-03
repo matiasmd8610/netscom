@@ -13036,7 +13036,8 @@ header .navbar-brand img {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5rem 0;
+  padding-top: 5rem;
+  padding-bottom: 1.6rem;
   color: rgb(0, 0, 0);
 }
 #nosotros .container .quienessomos .quienessomos__text {
@@ -13058,10 +13059,7 @@ header .navbar-brand img {
 /*SOLUCIONES TECNOLOGICAS
 ***********************************************/
 #servicios .container .soluciones {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   color: #000;
 }
 #servicios .container .soluciones__grid {
@@ -13131,9 +13129,24 @@ header .navbar-brand img {
 #servicios2 .container .servicios2__box .servicios2__box--item .text {
   text-align: justify;
 }
+@media (min-width: 768px) {
+  #servicios2 .container .servicios2__box .servicios2__box--item .text {
+    height: 120px;
+  }
+}
 @media (min-width: 992px) {
   #servicios2 .container .servicios2__box .servicios2__box--item .text {
-    min-height: 85px;
+    height: 85px;
+  }
+}
+@media (min-width: 1200px) {
+  #servicios2 .container .servicios2__box .servicios2__box--item .text {
+    height: 75px;
+  }
+}
+@media (min-width: 1400px) {
+  #servicios2 .container .servicios2__box .servicios2__box--item .text {
+    height: 70px;
   }
 }
 #servicios2 .container .servicios2__box .servicios2__box--item a {
@@ -13147,26 +13160,48 @@ header .navbar-brand img {
 }
 #servicios2 .servicios2-logos {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 2rem;
 }
 #servicios2 .servicios2-logos img {
   margin: 0 2rem;
+  width: 85%;
+}
+@media (min-width: 576px) {
+  #servicios2 .servicios2-logos img {
+    width: 65%;
+  }
+}
+@media (min-width: 768px) {
+  #servicios2 .servicios2-logos img {
+    width: 40%;
+  }
 }
 
 /*SECTION UBICACION
 *********************************************/
 #ubicacion .maps iframe {
   width: 100%;
-  height: 500px;
+  height: 400px;
+}
+@media (min-width: 992px) {
+  #ubicacion .maps iframe {
+    height: 500px;
+  }
 }
 #ubicacion .detalles {
+  margin-top: 1.3rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 @media (min-width: 992px) {
   #ubicacion .detalles {
+    margin-top: 0;
     padding-left: 2rem;
+    text-align: left;
   }
 }
 #ubicacion .detalles .lista {
@@ -13204,7 +13239,7 @@ header .navbar-brand img {
 .swiper-clientsLogos .swiper-slide {
   display: grid;
   grid-gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   padding: 2rem;
 }
 @media (min-width: 768px) {
