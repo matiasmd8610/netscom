@@ -72,7 +72,32 @@ header {
             .nav-item {
                 &:not(:last-child) {
                     margin-right: 1.8rem;
+
+                    .active{
+                        color: $color-blue-light;
+                    }
                 }
+                
+                // .active{
+                //     &:after{
+                    
+                //         @include media-breakpoint-up(lg) {
+                //             content: '';
+                //             display: block;
+                //             left: 50%;
+                //             width: 90%;
+                //             position: absolute;
+                //             transition: all 0.3s ease;
+                //             transform: translateX(-50%);
+                //             background-color: $color-blue-light;
+                //             height: 2px;
+                //             bottom: 0;
+                //         }
+                //     }
+                // }
+                
+
+                
 
                 .nav-link {
                     font-size: 1.5rem;
@@ -101,6 +126,8 @@ header {
                             bottom: 0;
                         }
                     }
+
+                   
                 }
 
                 /* &.contact-us {

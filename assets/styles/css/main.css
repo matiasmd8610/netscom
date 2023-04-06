@@ -12862,6 +12862,9 @@ header .navbar .navbar-collapse .nav-item {
 header .navbar .navbar-collapse .nav-item:not(:last-child) {
   margin-right: 1.8rem;
 }
+header .navbar .navbar-collapse .nav-item:not(:last-child) .active {
+  color: #1a9bf0;
+}
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.5rem;
   color: #242c59;
@@ -13422,6 +13425,31 @@ header .navbar-brand img {
   .servicios2-logos img {
     width: 40%;
   }
+}
+
+.grid_clientes {
+  display: grid;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 2rem;
+}
+@media (min-width: 576px) {
+  .grid_clientes {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .grid_clientes {
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .grid_clientes {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+.grid_clientes img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=main.css.map */
