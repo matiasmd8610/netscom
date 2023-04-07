@@ -12859,11 +12859,11 @@ header .navbar .navbar-collapse .nav-item {
       }
   } */
 }
+header .navbar .navbar-collapse .nav-item .active {
+  color: #1a9bf0 !important;
+}
 header .navbar .navbar-collapse .nav-item:not(:last-child) {
   margin-right: 1.8rem;
-}
-header .navbar .navbar-collapse .nav-item:not(:last-child) .active {
-  color: #1a9bf0;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.5rem;

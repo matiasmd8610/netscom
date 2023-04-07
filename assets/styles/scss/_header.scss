@@ -70,12 +70,15 @@ header {
             flex-grow: inherit;
 
             .nav-item {
+
+                .active{
+                    color: $color-blue-light !important;
+                }
+
                 &:not(:last-child) {
                     margin-right: 1.8rem;
 
-                    .active{
-                        color: $color-blue-light;
-                    }
+                    
                 }
                 
                 // .active{
