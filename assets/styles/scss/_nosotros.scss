@@ -56,24 +56,6 @@
             }
         }
 
-.servicios2-logos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 2rem;
-    img {
-        margin: 0 2rem;
-        width: 85%;
-
-        @include media-breakpoint-up(sm) {
-            width: 65%;
-        }
-
-        @include media-breakpoint-up(md) {
-            width: 40%;
-        }
-    }
-}
 
 
     
