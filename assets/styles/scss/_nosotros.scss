@@ -1,65 +1,32 @@
+.nosotros__flex--foto {
 
-
-    .nosotros__flex--foto{
-
-        img {
-            width: 100%;
-        }
-   
-       
-          
-    
+    img {
+        width: 100%;
     }
-        
-    
-    
-    .nosotros__flex--quienessomos{
-    
-    
-    padding-top: 3rem;
+}
+
+.nosotros__flex--quienessomos {
     padding-bottom: 1.6rem;
     color: rgb(0, 0, 0);
+}
+
+
+.quienessomos--text {
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
     }
+}
 
-        .quienessomos--titulo{
-            text-align: center;
-            
-        }
+.quienessomos-list {
+    list-style-type: square;
+    text-align: justify;
 
-        .quienessomos--text{
-            text-align: justify;
-            margin-bottom: 2rem;
-            margin-right: 0.3rem;
-            margin-left: 0.3rem;
-
-            @include media-breakpoint-up(md) {
-                font-size: 1.7rem;
-    
-            }
-    
-            @include media-breakpoint-up(lg) {
-                font-size: 2.2rem;
-            }
-        }
-
-        .quienessomos-list{
-            list-style-type:square;
-            text-align: justify;
-
-            @include media-breakpoint-up(md) {
-                font-size: 1.7rem;
-    
-            }
-    
-            @include media-breakpoint-up(lg) {
-                font-size: 2.2rem;
-            }
-        }
-
-
-
-    
-
-       
-
-    
+    @include media-breakpoint-up(lg) {
+        font-size: 2rem;
+    }
+}

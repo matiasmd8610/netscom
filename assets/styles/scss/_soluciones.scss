@@ -1,0 +1,43 @@
+.soluciones {
+    .icon-soluciones {
+        margin: 0 auto 2rem;
+        display: block;
+    }
+    
+    .two-cols-soluciones {
+        margin-top: 4rem;
+        @include media-breakpoint-up(lg) {
+            margin-top: 8rem;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    
+        ul {
+            margin-top: 5rem;
+            list-style: square;
+        }
+    }
+
+    &-logos {
+        margin-top: 8rem;
+        &--grid {
+            display: grid;
+            grid-column-gap: 4rem;
+            grid-row-gap: 3rem;
+            grid-template-columns: repeat(2, 1fr);
+            @include media-breakpoint-up(lg) {
+                grid-template-columns: repeat(5, 1fr);
+            }
+
+            img {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%;
+            }
+        }
+    }
+
+}

@@ -10,7 +10,7 @@ window.addEventListener('scroll', function () {
 if (document.querySelector('.swiper-main')) {
   const swiper = new Swiper('.swiper-main', {
       direction: "horizontal",
-      loop: true,
+      loop: false,
       autoplay: {
         delay: 2500,
         disableOnInteraction: false
@@ -19,6 +19,7 @@ if (document.querySelector('.swiper-main')) {
       speed: 1000,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true
       },
     
       navigation: {
@@ -32,24 +33,6 @@ if (document.querySelector('.swiper-main')) {
 /*Update copy automatically
 **************************************************/
 document.querySelector(".year-copy").innerText = new Date().getFullYear();
-
-/*Light Gallery
-*********************************************/
-document.querySelectorAll('.gallery-container').forEach((element, index) => {
-  lightGallery(document.getElementById(element.getAttribute('id')), {
-    plugins: [lgZoom, lgThumbnail],
-    //licenseKey: 'your_license_key',
-    speed: 1000,
-    download: false,
-    allowMediaOverlap: true,
-    mobileSettings: {
-      controls: false,
-      showCloseIcon: true
-    }
-    // ... other settings
-  });
-});
-
 
 /*Header anchor links
 *********************************************/
@@ -110,15 +93,15 @@ for (let i = 1; i <= 242; i++) {
   let img = document.createElement("img");
   img.setAttribute("alt", "Logo cliente");
 
-  if (i < 60){
+  if (i < 65){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
     document.getElementById("imagenes").appendChild(img);
   }
-  else if (i >= 60 && i < 120){
+  else if (i >= 65 && i < 129){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
     document.getElementById("imagenes2").appendChild(img);
   }
-  else if (i >= 120 && i < 180){
+  else if (i >= 129 && i < 193){
     img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
     document.getElementById("imagenes3").appendChild(img);
   }
@@ -135,12 +118,13 @@ for (let i = 1; i <= 242; i++) {
 if (document.querySelector('.swiper-clientsLogos')) {
   const swiper = new Swiper('.swiper-clientsLogos', {
       direction: "horizontal",
-      loop: true,
+      loop: false,
       autoplay: false,
       effect: "fade",
       speed: 1000,
       pagination: {
         el: '.swiper-pagination',
+        clickable: true
       },
     
       navigation: {

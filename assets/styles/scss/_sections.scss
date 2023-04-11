@@ -399,7 +399,7 @@
 /*CLIENTS LOGOS
 ***********************************************/
 .swiper-clientsLogos {
-    background-color: $color-gray-light-01;
+    //background-color: $color-gray-light-01;
     padding-bottom: 3rem;
 
     .swiper-slide {
@@ -407,6 +407,9 @@
         grid-gap: 2rem;
         grid-template-columns: repeat(4, 1fr);
         padding: 2rem;
+        background: #fff;
+        min-height: 924px;
+        align-content: flex-start;
 
         @include media-breakpoint-up(md) {
             grid-template-columns: repeat(8, 1fr);
@@ -414,7 +417,7 @@
 
         img {
             width: 100%;
-            border: 1px solid $color-gray-light-02;
+            //border: 1px solid $color-gray-light-02;
         }
     }
 
