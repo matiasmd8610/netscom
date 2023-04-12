@@ -12804,6 +12804,7 @@ header .navbar-toggler {
   padding: 0;
 }
 header .navbar-toggler-icon {
+  padding-right: 1rem;
   width: auto;
   height: auto;
   display: flex;
