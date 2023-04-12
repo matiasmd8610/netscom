@@ -87,30 +87,35 @@ AOS.init({
 });
 
 
-/*CLIENTS IMAGES
+/*CLIENTS IMAGES  // IF para que no haga break el submenu en paginas sin clientes)
 ****************************************************/
-for (let i = 1; i <= 242; i++) {
-  let img = document.createElement("img");
-  img.setAttribute("alt", "Logo cliente");
-
-  if (i < 65){
-    img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
-    document.getElementById("imagenes").appendChild(img);
-  }
-  else if (i >= 65 && i < 129){
-    img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
-    document.getElementById("imagenes2").appendChild(img);
-  }
-  else if (i >= 129 && i < 193){
-    img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
-    document.getElementById("imagenes3").appendChild(img);
-  }
-  else {
-    img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
-    document.getElementById("imagenes4").appendChild(img);
-  }
+if ( document.getElementById("imagenes") !== null ){
   
+  for (let i = 1; i <= 242; i++) {
+    let img = document.createElement("img");
+    img.setAttribute("alt", "Logo cliente");
+  
+    if (i < 65){
+      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      document.getElementById("imagenes").appendChild(img);
+    }
+    else if (i >= 65 && i < 129){
+      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      document.getElementById("imagenes2").appendChild(img);
+    }
+    else if (i >= 129 && i < 193){
+      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      document.getElementById("imagenes3").appendChild(img);
+    }
+    else {
+      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      document.getElementById("imagenes4").appendChild(img);
+    }
+    
+  }
 }
+   
+
 
 
 /*Swiper Clients logos initialize

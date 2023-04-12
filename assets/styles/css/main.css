@@ -12625,10 +12625,6 @@ footer {
   ****************************************/
 }
 footer .form {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  position: relative;
   margin-bottom: 4rem;
 }
 footer .formulario {
