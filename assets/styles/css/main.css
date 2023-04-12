@@ -12909,7 +12909,7 @@ header .navbar .navbar-collapse .nav-item .submenu .nav-item .nav-link:after {
   display: none;
 }
 header .navbar .navbar-collapse .nav-item:hover .submenu {
-  height: 330px;
+  height: auto;
 }
 header .navbar .navbar-collapse .nav-item .nav-link {
   font-size: 1.5rem;
@@ -13427,6 +13427,42 @@ header .navbar-brand img {
   }
 }
 .soluciones-logos--grid img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.mantenimiento .icon-soluciones {
+  margin: 0 auto 2rem;
+  display: block;
+}
+.mantenimiento .cols-mantenimiento {
+  margin-top: 4rem;
+}
+@media (min-width: 992px) {
+  .mantenimiento .cols-mantenimiento {
+    margin-top: 8rem;
+  }
+}
+.mantenimiento .cols-mantenimiento ul {
+  margin-top: 5rem;
+  list-style: square;
+}
+.mantenimiento-logos {
+  margin-top: 8rem;
+}
+.mantenimiento-logos--grid {
+  display: grid;
+  grid-column-gap: 4rem;
+  grid-row-gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 992px) {
+  .mantenimiento-logos--grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.mantenimiento-logos--grid img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
