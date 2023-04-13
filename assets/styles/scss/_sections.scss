@@ -168,10 +168,9 @@
             // padding: 5rem 0;
             padding-top: 5rem;
             padding-bottom: 1.6rem;
-            color: rgb(0, 0, 0);
+            color: #000;
 
             .quienessomos__text {
-                margin-bottom: 2rem;
                 margin-right: 0.3rem;
                 margin-left: 0.3rem;
 
@@ -193,7 +192,7 @@
 
 /*SOLUCIONES TECNOLOGICAS
 ***********************************************/
-#servicios {
+.servicios {
 
     .container {
 
@@ -207,6 +206,7 @@
             grid-template-columns: 1fr;
             justify-content: center;
             gap: 40px;
+            margin-top: 6rem;
 
             @include media-breakpoint-up(md) {
                 grid-template-columns: 1fr 1fr;
@@ -240,7 +240,7 @@
                 }
                 
                 p {
-                    text-align: justify;
+                    //text-align: justify;
                     margin-bottom: 3rem;
                 }
 
@@ -256,60 +256,16 @@
 }
 
 #servicios2 {
-    .container {
-        .servicios2__box {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-
-            .servicios2__box--item {
-
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 100%;
-
-                @include media-breakpoint-up(md) {
-                    width: 46%;
-
-                }
-
-                .text {
-                    text-align: justify;
-                    
-                    
-                    @include media-breakpoint-up(md) {
-                        height: 120px;
-                    }
-                    @include media-breakpoint-up(lg) {
-                        height: 85px;
-                    }
-                    @include media-breakpoint-up(xl) {
-                        height: 75px;
-                    }
-                    @include media-breakpoint-up(xxl) {
-                        height: 70px;
-                    }
-                    
-                }
-
-                a {
-                    margin: 20px 0;
-                }
-
-                img {
-                    width: 100%;
-                    margin-top: 2rem;
-                    height: 350px;
-                    object-fit: cover;
-                }
-
-            }
+    .btn {
+        margin: 0 auto;
+    }
+    .servicios2-images {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 5rem;
+        img {
+            width: calc(50% - 15px);
         }
-
     }
 
     .servicios-logos {

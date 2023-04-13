@@ -12484,7 +12484,6 @@ strong {
 }
 
 section {
-  margin-bottom: 3.5rem;
   padding: 4rem 0;
 }
 
@@ -12542,6 +12541,7 @@ h3, .h3 {
   font-weight: 600;
   margin-bottom: 2rem;
   letter-spacing: 0;
+  overflow: hidden;
 }
 @media (min-width: 768px) {
   h3, .h3 {
@@ -12552,7 +12552,7 @@ h3:after, .h3:after {
   content: "";
   display: block;
   height: 3px;
-  background-color: rgb(0, 136, 255);
+  background-color: #1a9bf0;
   width: 80px;
   margin-left: auto;
   margin-right: auto;
@@ -12673,7 +12673,7 @@ footer .redes .social-links li {
 }
 @media (min-width: 768px) {
   footer .redes .social-links li {
-    margin-right: 2.6rem;
+    margin-right: 2.2rem;
   }
 }
 footer .redes .social-links li:last-child {
@@ -13095,10 +13095,9 @@ header .navbar-brand img {
   align-items: center;
   padding-top: 5rem;
   padding-bottom: 1.6rem;
-  color: rgb(0, 0, 0);
+  color: #000;
 }
 #nosotros .container .quienessomos .quienessomos__text {
-  margin-bottom: 2rem;
   margin-right: 0.3rem;
   margin-left: 0.3rem;
 }
@@ -13115,27 +13114,28 @@ header .navbar-brand img {
 
 /*SOLUCIONES TECNOLOGICAS
 ***********************************************/
-#servicios .container .soluciones {
+.servicios .container .soluciones {
   text-align: center;
   color: #000;
 }
-#servicios .container .soluciones__grid {
+.servicios .container .soluciones__grid {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
   gap: 40px;
+  margin-top: 6rem;
 }
 @media (min-width: 768px) {
-  #servicios .container .soluciones__grid {
+  .servicios .container .soluciones__grid {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media (min-width: 992px) {
-  #servicios .container .soluciones__grid {
+  .servicios .container .soluciones__grid {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-#servicios .container .soluciones__grid .soluciones__grid--servicio {
+.servicios .container .soluciones__grid .soluciones__grid--servicio {
   width: auto;
   height: auto;
   display: flex;
@@ -13146,74 +13146,33 @@ header .navbar-brand img {
   border-radius: 1rem;
   padding: 3rem;
 }
-#servicios .container .soluciones__grid .soluciones__grid--servicio h3, #servicios .container .soluciones__grid .soluciones__grid--servicio .h3 {
+.servicios .container .soluciones__grid .soluciones__grid--servicio h3, .servicios .container .soluciones__grid .soluciones__grid--servicio .h3 {
   text-align: center;
 }
-#servicios .container .soluciones__grid .soluciones__grid--servicio img {
+.servicios .container .soluciones__grid .soluciones__grid--servicio img {
   height: 85px;
   width: auto;
   margin-bottom: 1rem;
 }
-#servicios .container .soluciones__grid .soluciones__grid--servicio p {
-  text-align: justify;
+.servicios .container .soluciones__grid .soluciones__grid--servicio p {
   margin-bottom: 3rem;
 }
 @media (min-width: 992px) {
-  #servicios .container .soluciones__grid .soluciones__grid--servicio .btn {
+  .servicios .container .soluciones__grid .soluciones__grid--servicio .btn {
     margin-top: auto;
   }
 }
 
-#servicios2 .container .servicios2__box {
+#servicios2 .btn {
+  margin: 0 auto;
+}
+#servicios2 .servicios2-images {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
+  justify-content: space-between;
+  margin-top: 5rem;
 }
-#servicios2 .container .servicios2__box .servicios2__box--item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  #servicios2 .container .servicios2__box .servicios2__box--item {
-    width: 46%;
-  }
-}
-#servicios2 .container .servicios2__box .servicios2__box--item .text {
-  text-align: justify;
-}
-@media (min-width: 768px) {
-  #servicios2 .container .servicios2__box .servicios2__box--item .text {
-    height: 120px;
-  }
-}
-@media (min-width: 992px) {
-  #servicios2 .container .servicios2__box .servicios2__box--item .text {
-    height: 85px;
-  }
-}
-@media (min-width: 1200px) {
-  #servicios2 .container .servicios2__box .servicios2__box--item .text {
-    height: 75px;
-  }
-}
-@media (min-width: 1400px) {
-  #servicios2 .container .servicios2__box .servicios2__box--item .text {
-    height: 70px;
-  }
-}
-#servicios2 .container .servicios2__box .servicios2__box--item a {
-  margin: 20px 0;
-}
-#servicios2 .container .servicios2__box .servicios2__box--item img {
-  width: 100%;
-  margin-top: 2rem;
-  height: 350px;
-  object-fit: cover;
+#servicios2 .servicios2-images img {
+  width: calc(50% - 15px);
 }
 #servicios2 .servicios-logos {
   display: flex;
