@@ -7,12 +7,15 @@
     .cols-mantenimiento {
         margin-top: 4rem;
         @include media-breakpoint-up(lg) {
-            margin-top: 8rem;
+            margin-top: 7rem;
         }
 
         ul {
-            margin-top: 5rem;
+            margin: 2rem 0 4rem 0;
             list-style: square;
+            @include media-breakpoint-up(lg) {
+                margin-top: 5rem 0 0 0;
+            }
         }
     }
 
