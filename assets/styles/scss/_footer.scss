@@ -14,7 +14,7 @@ footer {
     ****************************************/
     .formulario {
         background-color: rgba(17, 145, 214, 0.31);
-        padding: 2.3rem 2.3rem;
+        padding: 2rem;
     
     
         .error-msg {
@@ -29,12 +29,17 @@ footer {
         }
     
         .form-group {
-            margin-bottom: 2.5rem;
+            margin-bottom: 2.2rem;
     
             .form-control {
                 border-radius: 0;
-                padding: 1rem 1rem;
+                padding: .8rem 1rem;
                 font-size: 1.6rem;
+                &:focus {
+                    outline: 3px solid $color-blue-light;
+                    outline-offset: -2px;
+                    box-shadow: none;
+                }
             }
     
             textarea {

@@ -4,11 +4,6 @@
     width: 100%;
     height: auto;
 
-    @include media-breakpoint-down(sm) {
-        padding-top: 69px;
-    }
-
-
     .swiper-slide {
         height: 480px;
         display: flex;
@@ -166,9 +161,11 @@
             justify-content: center;
             align-items: center;
             // padding: 5rem 0;
-            padding-top: 5rem;
             padding-bottom: 1.6rem;
             color: #000;
+            @include media-breakpoint-up(lg) {
+                padding-top: 5rem;
+            }
 
             .quienessomos__text {
                 margin-right: 0.3rem;
@@ -205,17 +202,28 @@
             display: grid;
             grid-template-columns: 1fr;
             justify-content: center;
-            gap: 40px;
+            grid-gap: 2rem;
             margin-top: 6rem;
 
             @include media-breakpoint-up(md) {
-                grid-template-columns: 1fr 1fr;
-
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: 4rem;
             }
 
             @include media-breakpoint-up(lg) {
-                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-columns: repeat(3, 1fr);
+            }
 
+            &.soluciones-tecnologicas {
+                grid-template-columns: repeat(1, 1fr);
+                grid-gap: 2rem;
+                @include media-breakpoint-up(md) {
+                    grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 3rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    grid-template-columns: repeat(4, 1fr);
+                }
             }
 
             .soluciones__grid--servicio {
@@ -241,7 +249,10 @@
                 
                 p {
                     //text-align: justify;
-                    margin-bottom: 3rem;
+                    margin-bottom: 1rem;
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 3rem;
+                    }
                 }
 
                 .btn {
@@ -263,8 +274,20 @@
         display: flex;
         justify-content: space-between;
         margin-top: 5rem;
+        flex-direction: column;
+        @include media-breakpoint-up(lg) {
+            flex-direction: row;
+        }
         img {
-            width: calc(50% - 15px);
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+            @include media-breakpoint-up(lg) {
+                width: calc(50% - 15px);
+                margin-bottom: 0;
+                height: 420px;
+                object-fit: cover;
+            }
         }
     }
 
@@ -299,27 +322,37 @@
     }
 
     .detalles {
-        margin-top: 1.3rem;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        text-align: center;
+        @include media-breakpoint-down(lg) {
+            margin-top: 3rem;
+        }
+
+        img {
+            margin-left: 1rem;
+        }
+
         @include media-breakpoint-up(lg) {
             padding-left: 1rem;
         }
 
         .lista {
             list-style-type: none;
+            margin-top: 2rem;
 
             li {
                 padding: 10px 0;
+                display: flex;
+                align-items: baseline;
+                text-align: left;
 
-                i{
+                i {
                     padding-right: 15px;
-                    color: rgb(0, 136, 255);
+                    color: $color-blue-main;
                     font-size: 2.5rem;
+                    transform: translateY(0.5rem);
 
-                    a{
+                    a {
                         text-decoration: none;
                     }
                 }
@@ -355,14 +388,12 @@
 /*CLIENTS LOGOS
 ***********************************************/
 .swiper-clientsLogos {
-    //background-color: $color-gray-light-01;
     padding-bottom: 3rem;
 
     .swiper-slide {
         display: grid;
         grid-gap: 2rem;
-        grid-template-columns: repeat(4, 1fr);
-        padding: 2rem;
+        grid-template-columns: repeat(3, 1fr);
         background: #fff;
         min-height: 924px;
         align-content: flex-start;
@@ -371,9 +402,12 @@
             grid-template-columns: repeat(8, 1fr);
         }
 
+        @include media-breakpoint-up(md) {
+            grid-template-columns: repeat(8, 1fr);
+        }
+
         img {
             width: 100%;
-            //border: 1px solid $color-gray-light-02;
         }
     }
 

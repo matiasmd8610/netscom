@@ -115,9 +115,6 @@ if ( document.getElementById("imagenes") !== null ){
   }
 }
    
-
-
-
 /*Swiper Clients logos initialize
 **************************************/
 if (document.querySelector('.swiper-clientsLogos')) {
@@ -196,5 +193,12 @@ document.querySelectorAll('.has-submenu').forEach((element, index) => {
   element.addEventListener('click', ()=> {
     element.classList.toggle('active');
   })
+});
+
+/*SET ACTIVE TO ANCHOR LINK MENU
+**************************************************/
+$('.navbar-nav .contact-link').on("click", function() {
+  $('.navbar-nav li a').removeClass('active');
+  $(this).addClass('active');
 });
 
