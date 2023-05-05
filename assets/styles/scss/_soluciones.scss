@@ -14,7 +14,6 @@
         img {
             margin: 0 auto 3rem;
             display: block;
-            border: 5px solid $color-blue-light;
 
             @include media-breakpoint-up(lg) {
                 margin: 0 auto;

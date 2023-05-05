@@ -3,10 +3,6 @@ footer {
     padding-top: 4rem;
 
     .form {
-        // display: flex;
-        // flex-flow: row wrap;
-        // align-items: center;
-        // position: relative;
         margin-bottom: 4rem;
     }
 
@@ -14,8 +10,11 @@ footer {
     ****************************************/
     .formulario {
         background-color: rgba(17, 145, 214, 0.31);
-        padding: 2rem;
-    
+        padding: 2rem 1rem;
+        border-radius: 1rem;
+        @include media-breakpoint-up(lg) {
+            padding: 3rem 2rem;
+        }
     
         .error-msg {
             color: #f00000;
@@ -31,14 +30,25 @@ footer {
         .form-group {
             margin-bottom: 2.2rem;
     
-            .form-control {
-                border-radius: 0;
+            .form-control,
+            .form-select {
+                border-radius: 0.6rem;
                 padding: .8rem 1rem;
                 font-size: 1.6rem;
                 &:focus {
                     outline: 3px solid $color-blue-light;
                     outline-offset: -2px;
                     box-shadow: none;
+                }
+            }
+
+            .form-select {
+                option {
+                    &:nth-child(1) {
+                        @include media-breakpoint-down(lg) {
+                            font-size: 1.2rem;
+                        }
+                    }
                 }
             }
     

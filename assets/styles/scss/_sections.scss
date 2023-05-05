@@ -42,6 +42,7 @@
                 max-width: 85%;
             } */
 
+            h1,
             h2 {
                 color: #fff;
                 font-size: 3.2rem;
@@ -325,21 +326,18 @@
     .detalles {
         display: flex;
         flex-direction: column;
-        @include media-breakpoint-down(lg) {
+        @include media-breakpoint-down(xl) {
             margin-top: 3rem;
         }
 
-        img {
-            margin-left: 1rem;
-        }
-
-        @include media-breakpoint-up(lg) {
-            padding-left: 1rem;
+        @include media-breakpoint-up(xl) {
+            padding-left: 2rem;
         }
 
         .lista {
             list-style-type: none;
             margin-top: 2rem;
+            padding: 0;
 
             li {
                 padding: 10px 0;
@@ -396,14 +394,16 @@
         grid-gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
         background: #fff;
-        min-height: 924px;
+        min-height: 1930px;
         align-content: flex-start;
 
         @include media-breakpoint-up(md) {
-            grid-template-columns: repeat(8, 1fr);
+            grid-template-columns: repeat(5, 1fr);
+            min-height: 1700px;
         }
 
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(xl) {
+            min-height: 920px;
             grid-template-columns: repeat(8, 1fr);
         }
 
@@ -449,7 +449,6 @@
 *******************************/
 .laboratorio {
     img {
-        border: 5px solid $color-blue-light;
         @include media-breakpoint-down(lg) {
             margin-bottom: 3rem;
         }

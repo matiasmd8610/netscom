@@ -82,8 +82,10 @@ header {
                 }
 
                 &:not(:last-child) {
-                    margin-right: 1.8rem;
-                    
+                    margin-right: 1.2rem;
+                    @include media-breakpoint-up(xl) {
+                        margin-right: 1.8rem;
+                    }
                 }
 
                 .submenu {

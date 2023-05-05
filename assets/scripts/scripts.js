@@ -137,56 +137,6 @@ if (document.querySelector('.swiper-clientsLogos')) {
 }
 
 
-// $(document).ready(function() {
-//   let contenido = [
-//     "<div id='imagenes'></div>",
-//     "<div id='imagenes2'></div>",
-//     "<div id='imagenes3'></div>"
-//   ];
-//   var index = 0;
-//   setInterval(function() {
-//     $("#images").fadeOut(500, function() {
-//       $(this).replaceWith(contenido[index]);
-//     }).fadeIn(500);
-//     index = (index + 1) % contenido.length;
-//   }, 2000);
-// });
-
-
-
-
-// $(document).ready(function() {
-//   mostrarDiv();
-// });
-
-// function mostrarDiv() {
-//   $('#imagenes').fadeIn(500).delay(5000).fadeOut(500, function() {
-//     $(this).fadeIn(500, mostrarDiv);
-//   });
-
-//   $('#imagenes2').fadeIn(500).delay(6000).fadeOut(500, function() {
-//     $(this).fadeIn(500, mostrarDiv);
-//   });
-
-//   $('#imagenes3').fadeIn(500).delay(9000).fadeOut(500, function() {
-//     $(this).fadeIn(500, mostrarDiv);
-//   });
-// }
-
-// $(document).ready(function() {
-//   var divs = $('.miDiv');
-//   var index = 0;
-//   mostrarDiv();
-
-//   function mostrarDiv() {
-//     divs.eq(index).fadeIn(500).delay(2000).fadeOut(500, function() {
-//       index = (index + 1) % divs.length;
-//       mostrarDiv();
-//     });
-//   }
-// });
-
-
 /*HEADER SUBMENU MOBILE
 **********************************************/
 document.querySelectorAll('.has-submenu').forEach((element, index) => {

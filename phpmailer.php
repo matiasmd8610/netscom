@@ -14,19 +14,20 @@ require 'phpmailer/SMTP.php';
 $name = $_POST['name'];
 $telephone = $_POST['telephone'];
 $email = $_POST['email'];
+$service = $_POST['service'];
 $message = $_POST['message'];
-$subject = 'Mensaje recibido desde www.loteoskerlin.com.ar';
+$subject = 'Mensaje recibido desde www.netscom.com.ar';
 
-$recaptcha_secret = "6Ld8e8wkAAAAAEdq6opRmM9RV-qmVoqAnVYerI0U"; //Add secret key
+$recaptcha_secret = ""; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
 
 $body = <<<HTML
-    <h1>Mensaje recibido desde www.loteoskerlin.com.ar</h1>
+    <h1>Mensaje recibido desde www.netscom.com.ar</h1>
     <p>De: $name | $email | $telephone</p>
-    <!-- <h2>Mensaje:</h2> -->
+    <p>Servicio por el que consulta: $service</p>
     $message
 HTML;
 
@@ -42,8 +43,6 @@ try {
     $mailer->Password = 'wpFD@hW1SB';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 465;
-    //$mailer->AltBody = strip_tags($body);
-    //$mailer->CharSet = 'UTF-8';
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
