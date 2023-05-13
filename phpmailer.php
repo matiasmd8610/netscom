@@ -18,7 +18,7 @@ $service = $_POST['service'];
 $message = $_POST['message'];
 $subject = 'Mensaje recibido desde www.netscom.com.ar';
 
-$recaptcha_secret = ""; //Add secret key
+$recaptcha_secret = "6Lc70vslAAAAAERIlmrHNxMCAOaTl040ezNmQdWR"; //Add secret key
 $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$recaptcha_secret."&response=".$_POST['g-recaptcha-response']);
 $response = json_decode($response, true);
 
@@ -37,20 +37,19 @@ try {
     //Server setting
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
-    $mailer->Host = 'c1561910.ferozo.com';
+    $mailer->Host = 'smtp.netscom.com.ar';
     $mailer->SMTPAuth = true;  
-    $mailer->Username = 'no-reply@c1561910.ferozo.com';
-    $mailer->Password = 'wpFD@hW1SB';                          
+    $mailer->Username = 'info@netscom.com.ar';
+    $mailer->Password = '';                          
     $mailer->SMTPSecure = 'ssl';
-    $mailer->Port = 465;
+    $mailer->Port = 25;
 
     //Recipients
     $mailer->setFrom( $email, "$name" );
-    $mailer->addAddress('no-reply@c1561910.ferozo.com','Sitio web');
+    $mailer->addAddress('info@netscom.com.ar','Sitio web');
 
     //Content
     $mailer->isHTML(true);
-    //$mailer->msgHTML($body);
     $mailer->Subject = $subject;
     $mailer->msgHTML($body);
     $mailer->AltBody = strip_tags($body);

@@ -12689,7 +12689,7 @@ footer .redes .social-links li {
 }
 @media (min-width: 768px) {
   footer .redes .social-links li {
-    margin-right: 2.2rem;
+    margin-right: 2rem;
   }
 }
 footer .redes .social-links li:last-child {
@@ -13297,7 +13297,7 @@ header .navbar-brand img {
 /*THANK YOU
 ************************************************/
 .thank-you {
-  padding: 15rem 0;
+  padding: 14rem 0;
   text-align: center;
 }
 .thank-you > .container {
@@ -13311,6 +13311,10 @@ header .navbar-brand img {
 }
 .thank-you h1, .thank-you .h1 {
   color: #242c59;
+}
+.thank-you p {
+  font-size: 3rem;
+  letter-spacing: -0.01em;
 }
 
 /*CLIENTS LOGOS
