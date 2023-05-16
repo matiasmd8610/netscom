@@ -12,7 +12,7 @@ if (document.querySelector('.swiper-main')) {
       direction: "horizontal",
       loop: false,
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false
       },
       effect: "fade",
