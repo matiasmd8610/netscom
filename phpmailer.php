@@ -23,6 +23,7 @@ $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?s
 $response = json_decode($response, true);
 
 if( empty(trim($name)) ) $name = 'anonimo';
+if( empty(trim($service)) ) $service = 'El Usuario no seleccionó ningún servicio';
 
 $body = <<<HTML
     <h1>Mensaje recibido desde www.netscom.com.ar</h1>
@@ -40,7 +41,7 @@ try {
     $mailer->Host = 'smtp.netscom.com.ar';
     $mailer->SMTPAuth = true;  
     $mailer->Username = 'info@netscom.com.ar';
-    $mailer->Password = '';                          
+    $mailer->Password = 'N3t5C0m2o2I';                          
     $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 25;
 

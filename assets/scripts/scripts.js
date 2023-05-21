@@ -96,19 +96,19 @@ if ( document.getElementById("imagenes") !== null ){
     img.setAttribute("alt", "Logo cliente");
   
     if (i < 65){
-      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      img.src = "assets/images/clientes/" + "(" + i + ")" + ".jpg";
       document.getElementById("imagenes").appendChild(img);
     }
     else if (i >= 65 && i < 129){
-      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      img.src = "assets/images/clientes/" + "(" + i + ")" + ".jpg";
       document.getElementById("imagenes2").appendChild(img);
     }
     else if (i >= 129 && i < 193){
-      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      img.src = "assets/images/clientes/" + "(" + i + ")" + ".jpg";
       document.getElementById("imagenes3").appendChild(img);
     }
     else {
-      img.src = "assets/images/sliderclientes/" + "(" + i + ")" + ".jpg";
+      img.src = "assets/images/clientes/" + "(" + i + ")" + ".jpg";
       document.getElementById("imagenes4").appendChild(img);
     }
     
