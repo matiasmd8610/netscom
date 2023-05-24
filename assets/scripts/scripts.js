@@ -89,7 +89,7 @@ AOS.init({
 
 /*CLIENTS IMAGES  // IF para que no haga break el submenu en paginas sin clientes)
 ****************************************************/
-if ( document.getElementById("imagenes") !== null ){
+/* if ( document.getElementById("imagenes") !== null ){
   
   for (let i = 1; i <= 242; i++) {
     let img = document.createElement("img");
@@ -113,7 +113,42 @@ if ( document.getElementById("imagenes") !== null ){
     }
     
   }
+} */
+
+async function getClientsJson() {
+  await $.get("../assets/data/clients.json", function (response, state) {
+      if (state === "success") {
+          let clientsResponse = response;
+          let i = 0;
+          for (const item of clientsResponse) {
+            //console.log(item.name);
+            //console.log(i);
+            let img = document.createElement("img");
+            i++;
+            if (i < 67){
+              img.src = "assets/images/clientes/" +  item.src;
+              img.alt = item.name;
+              document.getElementById("imagenes").appendChild(img);
+            }
+            else if (i >= 67 && i < 134){
+              img.src = "assets/images/clientes/" + item.src;
+              document.getElementById("imagenes2").appendChild(img);
+            }
+            else if (i >= 134 && i < 201){
+              img.src = "assets/images/clientes/" + item.src;
+              document.getElementById("imagenes3").appendChild(img);
+            }
+            else {
+              img.src = "assets/images/clientes/" + "(" + i + ")" + ".jpg";
+              document.getElementById("imagenes4").appendChild(img);
+            }
+          }  
+      }
+  });
+  //console.log(products);
 }
+
+getClientsJson();
    
 /*Swiper Clients logos initialize
 **************************************/

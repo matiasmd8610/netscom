@@ -39,10 +39,9 @@ try {
     $mailer->SMTPDebug = 0;
     $mailer->isSMTP();
     $mailer->Host = 'smtp.netscom.com.ar';
-    $mailer->SMTPAuth = true;  
+    $mailer->SMTPAuth = false;  
     $mailer->Username = 'info@netscom.com.ar';
     $mailer->Password = 'N3t5C0m2o2I';                          
-    $mailer->SMTPSecure = 'ssl';
     $mailer->Port = 25;
 
     //Recipients
