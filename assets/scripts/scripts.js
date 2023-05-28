@@ -124,10 +124,10 @@ async function getClientsJson() {
             //console.log(item.name);
             //console.log(i);
             let img = document.createElement("img");
+            img.alt = item.name;
             i++;
             if (i < 67){
               img.src = "assets/images/clientes/" +  item.src;
-              img.alt = item.name;
               document.getElementById("imagenes").appendChild(img);
             }
             else if (i >= 67 && i < 134){
@@ -145,7 +145,6 @@ async function getClientsJson() {
           }  
       }
   });
-  //console.log(products);
 }
 
 getClientsJson();
