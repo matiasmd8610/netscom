@@ -97,6 +97,7 @@ async function getClientsJson() {
           for (const item of clientsResponse) {
             //console.log(item.name);
             //console.log(i);
+            // console.log(clientsResponse.length);
             let img = document.createElement("img");
             img.alt = item.name;
             i++;
