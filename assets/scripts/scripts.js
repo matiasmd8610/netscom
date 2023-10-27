@@ -133,7 +133,10 @@ if (document.querySelector('.swiper-clientsLogos')) {
   const swiper = new Swiper('.swiper-clientsLogos', {
       direction: "horizontal",
       loop: false,
-      autoplay: false,
+      autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+      },
       effect: "fade",
       speed: 1000,
       pagination: {
