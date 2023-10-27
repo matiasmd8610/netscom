@@ -398,8 +398,9 @@
         grid-gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
         background: #fff;
-        min-height: 1930px;
+        min-height: 1650px;
         align-content: flex-start;
+        align-items: center;
 
         @include media-breakpoint-up(md) {
             grid-template-columns: repeat(5, 1fr);

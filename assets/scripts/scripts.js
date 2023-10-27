@@ -101,15 +101,15 @@ async function getClientsJson() {
             let img = document.createElement("img");
             img.alt = item.name;
             i++;
-            if (i < 67){
+            if (i < 54) {
               img.src = "assets/images/clientes/" +  item.src;
               document.getElementById("imagenes").appendChild(img);
             }
-            else if (i >= 67 && i < 134){
+            else if (i >= 54 && i < 108) {
               img.src = "assets/images/clientes/" + item.src;
               document.getElementById("imagenes2").appendChild(img);
             }
-            else if (i >= 134 && i < 201){
+            else if (i >= 108 && i < 162) {
               img.src = "assets/images/clientes/" + item.src;
               document.getElementById("imagenes3").appendChild(img);
             }
